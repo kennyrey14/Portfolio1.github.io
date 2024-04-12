@@ -20,6 +20,7 @@ background-size: cover;
   overflow: hidden; /* Hide overflow to only show one image at a time */
   padding-right: 35%;
   padding-top: 7%;
+  background-size: cover;
 }
 
 .slides {
@@ -27,6 +28,7 @@ background-size: cover;
   width: 300%; /* Three times the width of a single slide */
   animation:slide 10s infinite; /* Adjust the duration for automatic slide change */
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .image {
