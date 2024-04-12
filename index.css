@@ -19,24 +19,22 @@ background-size: cover;
   margin: auto;
   overflow: hidden; /* Hide overflow to only show one image at a time */
   padding-right: 35%;
-  padding-top: 10%;
+  padding-top: 7%;
 }
 
 .slides {
   display: flex;
   width: 300%; /* Three times the width of a single slide */
   animation:slide 10s infinite; /* Adjust the duration for automatic slide change */
+  background-size: cover;
 }
 
 .image {
   flex: 1;
   height: 405px; /* Adjust the height as needed */
   background-size: cover;
-  padding-top: 65%;
   background-repeat: no-repeat;
 }
-
-
 @keyframes slide {
   0% { background-image: url('https://drive.google.com/thumbnail?id=1KZjayr-ZD7wnmqXjJDOpMwc5gksyrj13&sz=w5000'); }
   33.33% { background-image: url('https://drive.google.com/thumbnail?id=19yiJqP_FE4gPUb61jHruEvIqnh8Ojzhu&sz=w5000'); }
