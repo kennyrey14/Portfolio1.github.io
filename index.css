@@ -1,0 +1,172 @@
+    .bgimg-1, .bgimg-2 , .bgimg-3 {
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+	/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: auto;
+  overflow: hidden; /* Hide overflow to only show one image at a time */
+  padding-right: 35%;
+  padding-top: 10%;
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* Three times the width of a single slide */
+  animation:slide 10s infinite; /* Adjust the duration for automatic slide change */
+}
+
+.image {
+  flex: 1;
+  height: 405px; /* Adjust the height as needed */
+  background-size: cover;
+  padding-top: 65%;
+  background-repeat: no-repeat;
+}
+
+
+@keyframes slide {
+  0% { background-image: url('https://drive.google.com/thumbnail?id=1KZjayr-ZD7wnmqXjJDOpMwc5gksyrj13&sz=w5000'); }
+  33.33% { background-image: url('https://drive.google.com/thumbnail?id=19yiJqP_FE4gPUb61jHruEvIqnh8Ojzhu&sz=w5000'); }
+  69.67% { background-image: url('https://drive.google.com/thumbnail?id=1MiFnfwVlPLftWBv4cf4ZaXwpgk4E0kfM&sz=w5000'); }
+  100% { background-image: url('https://drive.google.com/thumbnail?id=1KZjayr-ZD7wnmqXjJDOpMwc5gksyrj13&sz=w5000'); } /* Loop back to the first image */
+}
+
+@keyframes slideIn {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideRight {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+body {
+  font-family: 'Arial', sans-serif;
+  background: black;
+  color: #8e7e7e;
+}
+
+.ech4 {
+  margin: 0px;
+  margin-top: 10px;
+  display:flex;
+  font-size: 15px;
+  animation: slideIn 1.5s ease forwards; /* Use animation for 1 second */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 200px;
+}
+
+.section {
+  padding: 20px 0;
+  padding-bottom: 20px;
+  text-align: left;
+
+}
+
+.section h2 {
+  margin-bottom: 40px;
+}
+
+.portfolio-item {
+  margin-bottom: 40px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #f7efef;
+  text-align:center;
+  padding: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #f0dddd;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+.portfolio-buttons {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 30%;
+  padding-bottom: 20px;
+}
+
+.portfolio-buttons button {
+  padding: 10px 20px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.portfolio-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.portfolio-buttons button i {
+  margin-right: 5px;
+}
+.sticky-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1a0404;
+}
+.sticky-menu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000; /* Ensure the menu stays on top of other content */
+    }
+
+.content {
+  padding-top: 50px; /* Adjust the padding to prevent content from being hidden behind the menu */
+}
