@@ -72,6 +72,7 @@ body {
   margin-top: 10px;
   display:flex;
   font-size: 15px;
+  color: #007bff;
   animation: slideIn 1.5s ease forwards; /* Use animation for 1 second */
 }
 
